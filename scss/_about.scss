@@ -1,0 +1,166 @@
+$secondary-color: #2f94d8;
+@mixin easeOut {
+    transition: all 0.5s ease-in-out;
+}
+.bg-color{
+    background: linear-gradient(to right,rgba(53, 50, 50, 0.6), rgba(36, 35, 35, 0.6)), url(../img/about.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    min-height: 100vh;
+    .text-secondary{
+        font-size: 5rem;
+    }
+}
+.about-info{
+    padding-top: 5rem;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    padding-bottom: 4rem;
+
+    .bio-image{
+        grid-area: bioimage;
+        margin: auto;
+        border-radius: 30%;
+        border: $secondary-color 1px solid;
+        width: 250px;
+        height: auto;
+    }
+    .bio{
+        grid-area: bio;
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.872);
+
+        .text-about{
+            font-size: 4rem;
+            color: rgb(25, 149, 221);
+        }
+        
+        p{
+            font-weight: 100px;
+            font-size: 1.3rem;
+        }
+    }
+    .job{
+        background-image: linear-gradient(to right, #16222a, #355a6d);
+        color: rgba(255, 255, 255, 0.863);
+        border-radius: 5%;
+        padding: 0.5rem 0.5rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+
+        &:hover{
+            background-image: linear-gradient(to right, #0f181f, #1e3f50);
+            @include easeOut;
+        }
+        h3{
+            color: rgb(63, 224, 252);
+        }
+    }
+    .job-1{
+        grid-area: job1;
+        border-bottom: $secondary-color 5px solid;
+        font-size: 1.1rem;
+        .list{
+            list-style: none;
+            .list-item{
+                padding: 0.2rem;
+            }
+        }
+    }
+    .job-2{
+        grid-area: job2;
+        border-bottom: rgb(187, 10, 10) 5px solid;
+        font-size: 1.1rem;
+        .list2-item{
+            list-style: none;
+            padding: 0.2rem;
+        }
+    }
+    .job-3{
+        grid-area: job3;
+        border-bottom: rgb(44, 146, 44) 5px solid;
+        .list2-item{
+            list-style: none;
+            padding: 0.2rem;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .about-info{
+        padding-top: 5rem;
+        grid-gap: 30px;
+        grid-template-areas: 'bioimage' 'bio' 'job1' ' job2' ' job3';
+        grid-template-columns: repeat(1, 1fr);
+        overflow: hidden;
+
+
+        .bio-image{
+            grid-area: bioimage;
+            width: 250px;
+            height: auto;
+        }
+        .bio{
+            grid-area: bio;
+            width: 100%;
+            color: rgba(255, 255, 255, 0.872);
+    
+            .text-about{
+                font-size: 3rem;
+                color: rgb(83, 140, 255);
+            }
+            p{
+                font-weight: 100px;
+                font-size: 1.1rem;
+                margin-left: 0.8rem;
+            }
+        }
+        .job{
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 1124px){
+    #about{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .about-info{
+        grid-gap: 30px;
+        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2'' job3';
+        grid-template-columns: repeat(1, 1fr);
+        overflow: hidden;
+
+        .bio-image{
+            grid-area: bioimage;
+            width: 250px;
+            height: auto;
+        }
+        .bio{
+            grid-area: bio;
+            font-size: 1rem;
+            width: 100%;
+            color: rgba(255, 255, 255, 0.872);
+    
+            .text-about{
+                font-size: 3.5rem;
+                color: rgb(25, 149, 221);
+            }
+            
+            p{
+                font-weight: 100px;
+                font-size: 1.6rem;
+                margin-left: 0.8rem;
+            }
+        }
+        .job{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

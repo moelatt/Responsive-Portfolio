@@ -1,0 +1,242 @@
+// Work/Projects CSS
+#projects{
+    min-height: 100vh;
+    background: linear-gradient(to right,rgba(53, 50, 50, 0.6), rgba(36, 35, 35, 0.6)), url(../img/projects.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .sm-heading{
+        padding-top: 6%;
+        color: rgb(245, 205, 153);
+        padding-bottom: 5px;
+        margin-left: 1rem;
+    }
+    .project{
+        display: grid;
+        grid-gap: 20px;
+        margin-left: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    
+        img{
+            position: relative;
+            background-attachment: fixed;
+            background-size: cover;
+            width: 400px;
+            height: auto;
+            border: #fff 1px solid;
+            border-radius: 20px;
+            margin-bottom: 1.5rem;
+          
+            &:hover{
+                border: rgb(3, 119, 196) 4px solid;
+                border-color: $secondary-color;
+                @include easeOut;
+            }
+        }
+        //Button styles
+        .item .button{
+            background-image: linear-gradient(to right, rgb(58, 95, 218), rgb(24, 142, 169));
+            color: white;
+            font-size: 1.2rem;
+            text-shadow: none;
+            font-weight: bold;
+            width: 250px;
+            height: 55px;
+            border: none;
+            margin-bottom: 0.6rem;
+            padding: 0.8rem 1rem;
+            border-radius: 15px;
+            cursor: pointer;
+
+            &:hover{
+                border: white 1px solid; 
+            }
+            &:active{
+                transform: translateY(4px);
+            }
+            // eye icons
+            .buttonImage{
+                float: left;
+                width: 35px;
+                height: auto;
+                border: none;
+                padding-right: 0.3rem;
+            }
+            p{
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .item .button2{
+            background-image: linear-gradient(to right, #6441a5, #734b6d);
+            color: white;
+            font-size: 1.2rem;
+            text-shadow: none;
+            font-weight: bold;
+            padding: 0.8rem 1rem;
+            width: 150px;
+            height: 55px;
+            border: none;
+            margin-bottom: 0.8rem;
+            margin-left: 1rem;
+            padding: 0.8rem 1rem;
+            border-radius: 15px;
+            cursor: pointer;
+        
+            &:hover{
+                border: white 1px solid;
+            }
+            &:active{
+                transform: translateY(4px);
+            }
+        }
+
+    }
+    .horizontal-line{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        border: 2px solid rgba(128, 128, 128, 0.409);
+        border-radius: 2px;
+    }
+    .skills-rating{
+        padding-bottom: 4rem;
+        .lg-heading{
+            text-align: center;
+            color: rgb(6, 247, 255);
+            font-size: 2.4rem;
+            margin-bottom: 0.5rem;
+        }
+        /* Three column layout */
+        .side {
+            color: rgb(255, 255, 255);
+            font-size: 1.5rem;
+            margin-left: 3rem;
+            width: 25%;
+            margin-top:10px;
+        }
+        
+        .middle {
+            margin-top:15px;
+            float: left;
+            width: 70%;
+        }
+        
+        /* Place text to the right */
+        .right {
+            // text-align: right;
+            color: rgba(250, 250, 250, 0.603);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        /* The bar container */
+        .bar-container {
+            width: 50%;
+            background-color: #f1f1f146;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.76);
+            border-radius: 5px;
+        }
+        
+        /* Individual bars */
+        .bar-5 {width: 95%; height: 26px; background-color: rgba(255, 157, 0, 0.95); border-radius: 5px;}
+        .bar-4 {width: 85%; height: 26px; background-color: rgba(255, 157, 0, 0.95);border-radius: 5px;}
+        .bar-3 {width: 85%; height: 26px; background-color: rgba(255, 157, 0, 0.95);border-radius: 5px;}
+        .bar-2 {width: 50%; height: 26px; background-color: rgba(255, 157, 0, 0.95);border-radius: 5px;}
+        
+        /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+        @media (max-width: 1180px) {
+            .side, .middle {
+            width: 100%;
+            }
+            .bar-container{
+                margin-left: 3rem;
+            }
+            .right {
+            display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1180px) {
+    #projects{
+        .project{
+            grid-template-columns: repeat(2, 1fr)
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #projects{
+        .sm-heading{
+            font-size: 1.6rem;
+        }
+        .project{
+            grid-template-columns: repeat(2, 1fr);
+            
+            img{
+                width: 340px;
+                height: auto;
+                margin-bottom: 1rem;
+            }
+            .item{
+                .button{
+                    font-size: 1rem;
+                    width: 190px;
+                    height: 48px;
+
+                    .buttonImage{
+                        width: 30px;
+                    }
+                }
+                .button2{
+                    font-size: 1rem;
+                    width: 130px;
+                    height: 48px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    #projects{
+        .sm-heading{
+            font-size: 1.3rem;
+        }
+        .project{
+            grid-template-columns: repeat(1, 1fr);
+            
+            img{
+                width: 340px;
+                height: auto;
+                margin-bottom: 1rem;
+            }
+            .item{
+                .button{
+                    font-size: 1rem;
+                    width: 190px;
+                    height: 48px;
+
+                    .buttonImage{
+                        width: 30px;
+                    }
+                }
+                .button2{
+                    font-size: 1rem;
+                    width: 130px;
+                    height: 48px;
+                }
+            }
+        }
+    }
+}

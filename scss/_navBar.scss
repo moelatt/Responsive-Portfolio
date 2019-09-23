@@ -1,0 +1,103 @@
+@mixin easeOut {
+    transition: all 0.5s ease-in-out;
+}
+nav{
+    z-index: 3;
+    margin: 0 1.5rem;
+    border-radius: 10px;
+    // cutting the edge
+    // clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+}
+
+.navbar{
+    // background-color: rgba(8, 81, 94, 0.6);   
+    background-color: rgba(115, 119, 119, 0.555);
+    margin-bottom: 1rem;
+    height: 5rem;
+}
+.navbar-brand{
+    font-size: 3.0rem;
+    font-family: cursive;
+    padding: 0 1rem;
+    color: #0cebff;
+    font-weight: bold;
+    transition: all 1s ease;
+
+    &:hover{
+        color: rgb(163, 162, 115);
+    }
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.nav-link{
+    color: white;
+    font-size: 1.3rem;
+    margin: 0.6rem 2rem;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+
+    &:hover{
+        color: #0abeeb;
+    }
+}
+
+/* humbegar menu button */
+.toggler-btn{
+    /* border: 2px solid #d3325f; */
+    padding: 5px;
+    transition: all 2s ease;
+}
+
+.bar{
+    width: 40px;
+    height: 5px;
+    margin: 5px;
+    margin-left: right;
+    border-radius: 5px;
+    background: white;
+    transition: all 0.5s ease
+}
+.change {
+    .bar1{
+        transform: rotate(-45deg) translateY(14px);
+    }
+
+    .bar2{
+        opacity: 0;
+    }
+    .bar3{
+        transform: rotate(45deg) translateY(-14px);
+    }
+}
+// animation sticky nav-bar
+.fixed-top {
+    animation: mymove 1s ease-in-out;
+
+    @keyframes mymove {
+      from {
+        top: -75px;
+      }
+      to {
+        top: 0px;
+      }
+    }
+}
+@media screen and (max-width: 500px){
+    .navbar-brand{
+        font-size: 2rem;
+        padding: 0 0.3rem;
+    }
+    .bar{
+        width: 33px;
+    }
+    .navbar-nav{
+        background-color: rgba(103, 105, 105, 0.89);
+        border-radius: 10px;
+    }
+    .nav-link{
+        float: right;
+    }
+}

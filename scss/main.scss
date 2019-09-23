@@ -1,0 +1,22 @@
+@import 'navBar';
+@import 'welcome';
+@import 'about';
+@import 'projects';
+@import 'mediaQuery';
+
+*{
+    box-sizing: border-box;
+}
+html{
+    background: black;
+    // scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+    width: 100%;
+    // background-position: center;
+}
+.body-container::-webkit-scrollbar{ 
+        display: none;  // Safari and Chrome
+}
