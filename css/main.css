@@ -79,7 +79,7 @@ nav {
   /* exact background size */
   min-height: calc(100vh);
   /* background image and overlay color and opacity is 0.6 */
-  background: linear-gradient(to right, rgba(53, 50, 50, 0.6), rgba(36, 35, 35, 0.6)), url(/Responsive-Portfolio/img/canyon-2178786_1920.jpg);
+  background: linear-gradient(to right, rgba(53, 50, 50, 0.6), rgba(36, 35, 35, 0.6)), url(../img/canyon-2178786_1920.jpg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -195,7 +195,7 @@ nav {
     padding-bottom: 3rem; } }
 
 .bg-color {
-  background: linear-gradient(to right, rgba(53, 50, 50, 0.6), rgba(36, 35, 35, 0.6)), url(/Responsive-Portfolio/img/about.jpg);
+  background: linear-gradient(to right, rgba(53, 50, 50, 0.6), rgba(36, 35, 35, 0.6)), url(../img/about.jpg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -320,7 +320,7 @@ nav {
 
 #projects {
   min-height: 100vh;
-  background: linear-gradient(to right, rgba(53, 50, 50, 0.6), rgba(36, 35, 35, 0.6)), url(/Responsive-Portfolio/img/projects.jpg);
+  background: linear-gradient(to right, rgba(53, 50, 50, 0.6), rgba(36, 35, 35, 0.6)), url(../img/projects.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
