@@ -152,7 +152,27 @@
 
 // Media Query
 @media screen and (max-width: 500px){
+    #welcome{
+        background: linear-gradient(to right,rgba(83, 79, 79, 0.6), rgba(59, 58, 58, 0.6));
+
+    }
     .container{
         padding-bottom: 3rem;
+    }
+    .banner{
+        & small{
+            color: #e2d7bc;
+            font-size: 2rem;
+        }
+        .display{
+            &.welcome{
+                .first-text{
+                    font-size: 1.7rem;
+                }
+                .second-text{
+                    font-size: 1.6rem;
+                }
+            }
+        }
     }
 }

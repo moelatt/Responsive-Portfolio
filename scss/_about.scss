@@ -91,6 +91,9 @@ $secondary-color: #2f94d8;
     }
 }
 @media screen and (max-width: 500px) {
+    .bg-color{
+        background: linear-gradient(to right,rgba(53, 50, 50, 0.6), rgba(36, 35, 35, 0.6));
+    }
     .about-info{
         padding-top: 5rem;
         grid-gap: 30px;

@@ -210,6 +210,8 @@
 }
 @media screen and (max-width: 500px) {
     #projects{
+        background: linear-gradient(to right,rgba(88, 81, 81, 0.6), rgba(56, 55, 55, 0.6));
+        
         .sm-heading{
             font-size: 1.3rem;
         }
