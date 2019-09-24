@@ -196,7 +196,7 @@ nav {
     padding-bottom: 3rem; } }
 
 .bg-color {
-  background: linear-gradient(to right, rgba(53, 50, 50, 0.6), rgba(36, 35, 35, 0.6)), url(../img/about.jpg);
+  background: linear-gradient(to right, rgba(53, 50, 50, 0.6), rgba(36, 35, 35, 0.6)), url(../img/about.jpeg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
