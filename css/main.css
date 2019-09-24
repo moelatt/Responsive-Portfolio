@@ -192,8 +192,17 @@ nav {
     transform: translateY(-12px); } }
 
 @media screen and (max-width: 500px) {
+  #welcome {
+    background: linear-gradient(to right, rgba(83, 79, 79, 0.6), rgba(59, 58, 58, 0.6)); }
   .container {
-    padding-bottom: 3rem; } }
+    padding-bottom: 3rem; }
+  .banner small {
+    color: #e2d7bc;
+    font-size: 2rem; }
+  .banner .display.welcome .first-text {
+    font-size: 1.7rem; }
+  .banner .display.welcome .second-text {
+    font-size: 1.6rem; } }
 
 .bg-color {
   background: linear-gradient(to right, rgba(53, 50, 50, 0.6), rgba(36, 35, 35, 0.6)), url(../img/about.jpeg);
@@ -265,6 +274,8 @@ nav {
       padding: 0.2rem; }
 
 @media screen and (max-width: 500px) {
+  .bg-color {
+    background: linear-gradient(to right, rgba(53, 50, 50, 0.6), rgba(36, 35, 35, 0.6)); }
   .about-info {
     padding-top: 5rem;
     grid-gap: 30px;
@@ -489,24 +500,26 @@ nav {
       height: 48px; } }
 
 @media screen and (max-width: 500px) {
-  #projects .sm-heading {
-    font-size: 1.3rem; }
-  #projects .project {
-    grid-template-columns: repeat(1, 1fr); }
-    #projects .project img {
-      width: 340px;
-      height: auto;
-      margin-bottom: 1rem; }
-    #projects .project .item .button {
-      font-size: 1rem;
-      width: 190px;
-      height: 48px; }
-      #projects .project .item .button .buttonImage {
-        width: 30px; }
-    #projects .project .item .button2 {
-      font-size: 1rem;
-      width: 130px;
-      height: 48px; } }
+  #projects {
+    background: linear-gradient(to right, rgba(88, 81, 81, 0.6), rgba(56, 55, 55, 0.6)); }
+    #projects .sm-heading {
+      font-size: 1.3rem; }
+    #projects .project {
+      grid-template-columns: repeat(1, 1fr); }
+      #projects .project img {
+        width: 340px;
+        height: auto;
+        margin-bottom: 1rem; }
+      #projects .project .item .button {
+        font-size: 1rem;
+        width: 190px;
+        height: 48px; }
+        #projects .project .item .button .buttonImage {
+          width: 30px; }
+      #projects .project .item .button2 {
+        font-size: 1rem;
+        width: 130px;
+        height: 48px; } }
 
 * {
   box-sizing: border-box; }
