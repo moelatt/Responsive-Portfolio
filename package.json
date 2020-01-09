@@ -6,7 +6,8 @@
   "homepage": "https://moelatt.github.io/Responsive-Portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "author": "Moe Latt",
   "license": "MIT",
