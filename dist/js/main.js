@@ -89,6 +89,6 @@ function page1GFunc(){ window.open("https://github.com/moelatt/NodeJS-MongoDb-Ex
 function page2Func(){ window.open("https://moelatt.github.io/reminder-with-data-base/", '_blank')}
 function page2GFunc(){ window.open("https://github.com/moelatt/reminder-with-data-base", '_blank')}
 
-function page3Func(){ window.open("https://github.com/moelatt/NodeJS-MongoDb-Express-HTML-CSS-JS",'_blank')}
-function page3GFunc(){ window.open("hhttps://github.com/moelatt/Car_Blog_HTML-CSS", '_blank')}
+function page3Func(){ window.open("https://moelatt.github.io/Car_Blog_HTML-CSS/",'_blank')}
+function page3GFunc(){ window.open("https://github.com/moelatt/Car_Blog_HTML-CSS", '_blank')}
 
